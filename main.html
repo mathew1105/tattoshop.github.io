@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkMaster Tattoo Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to InkMaster Tattoo Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Your Journey to Amazing Ink Starts Here</h2>
+        <p>At InkMaster Tattoo Studio, we pride ourselves on creating stunning, personalized tattoos. Browse our gallery, meet our talented artists, and book your session today!</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="tattoo1.jpg" alt="Tattoo Design 1">
+            <img src="tattoo2.jpg" alt="Tattoo Design 2">
+            <img src="tattoo3.jpg" alt="Tattoo Design 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>InkMaster Tattoo Studio was founded in 2021 by a group of passionate tattoo artists dedicated to bringing your ink dreams to life. Our studio offers a clean, safe, and creative environment for all your tattoo needs.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@inkmastertattoos.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Tattoo Lane, Inkville, TX</p>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Appointment</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="design">Choose Your Design:</label>
+            <select id="design" name="design" required>
+                <option value="design1">Tattoo Design 1</option>
+                <option value="design2">Tattoo Design 2</option>
+                <option value="design3">Tattoo Design 3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 InkMaster Tattoo Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
